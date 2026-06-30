@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube 中英双语字幕</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <h1 class="title">YouTube 中英双语字幕</h1>
+      <p class="desc">自动显示原文 + 翻译，英文视频译中文，中文视频译英文</p>
+      <label class="toggle-row">
+        <span>启用双语字幕</span>
+        <input type="checkbox" id="enabled" checked />
+        <span class="switch"></span>
+      </label>
+      <div class="legend">
+        <span class="dot dot-en"></span> 第一行：原文
+        <span class="dot dot-zh"></span> 第二行：翻译
+      </div>
+      <p class="hint">切换开关后请刷新 YouTube 页面</p>
+      <p class="status" id="status"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
